@@ -1,0 +1,18 @@
+{
+  "name": "challenge_drupal_theme",
+  "version": "1.0.0",
+  "description": "Challenge 2015 Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vision 100 IT",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-less": "^3.0.5",
+    "gulp-plumber": "^1.0.1",
+    "gulp-using": "^0.1.0"
+  }
+}

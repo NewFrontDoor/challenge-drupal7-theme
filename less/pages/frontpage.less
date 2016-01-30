@@ -1,0 +1,126 @@
+html { height: 100%; }
+body.front {
+  height: 100%;
+  padding-top: 0 !important;
+
+  .main-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 10px white solid;
+    background: #eee;
+
+    #splash-container {
+      position:absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 320px;
+      height: 250px;
+      margin-left: -160px;
+      margin-top: -125px;
+
+      background-color: @splash-container-background;
+
+      #splash-header {
+        background-color: @splash-header-background;
+        color:white;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 22px;
+        font-weight: bold;
+        height: 55px;
+        line-height: 55px;
+      }
+
+      #choose-container {
+        position: relative;
+
+        a.choose-challenge-type {
+          display: block;
+          height: 145px;
+          width: 130px;
+          top: 20px;
+          position: absolute;
+
+          &:first-child {
+            left: 20px;
+          }
+          &:last-child {
+            right: 20px;
+          }
+
+          [class*=-title] {
+            text-transform: uppercase;
+            position: absolute;
+            left: 10px;
+          }
+
+          @text-start-top: 42px;
+
+          .challenge-title, .conference-title {
+            font-size: @font-size-large;
+            font-weight: bold;
+            height: 16px;
+            line-height: 16px;
+            font-size: 14px;
+          }
+
+          .challenge-title {
+            top: @text-start-top;
+          }
+          .conference-title {
+            top: @text-start-top + 16px;
+          }
+
+          .conference-type-title {
+            font-family: 'baron_neue';
+            color: black;
+            background-color: white;
+            top: @text-start-top + 32px;
+            width: 110px;
+            text-align: center;
+            height: 20px;
+            line-height: 20px;
+            font-size: 18px;
+          }
+
+          .square {
+            background-color: white;
+            height: 12px;
+            width: 12px;
+            position: absolute;
+          }
+
+          .square-one {
+            top: @text-start-top + 1px;
+            right: 24px;
+          }
+
+          .square-two {
+            top: @text-start-top + 1px;
+            right: 10px;
+          }
+
+          .square-three {
+            top: @text-start-top + 16px;
+            right: 10px;
+          }
+        }
+
+        a#choose-premium {
+          background-color: red;
+          .challenge-title { color: black; }
+          .conference-title { color: white; }
+        }
+
+        a#choose-raw {
+          background-color: black;
+          .challenge-title { color: white; }
+          .conference-title { color: red; }
+          .square { background-color: red; }
+        }
+      }
+    }
+  }
+}
