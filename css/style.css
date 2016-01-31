@@ -7526,6 +7526,11 @@ html {
 }
 body.front {
   height: 100%;
+}
+body.front.toolbar-drawer.navbar-is-fixed-top {
+  padding-top: 64px !important;
+}
+body.front.navbar-is-fixed-top {
   padding-top: 0 !important;
 }
 body.front .main-container {
@@ -7535,14 +7540,258 @@ body.front .main-container {
   border: 10px white solid;
   background: #eee;
 }
+@media (max-width: 540px) {
+  body.front .main-container #splash-container {
+    width: 312px;
+    height: 221px;
+    margin-left: -156px;
+    margin-top: -117px;
+  }
+  body.front .main-container #splash-container #splash-header {
+    font-size: 19.5px;
+    height: 52px;
+    line-height: 52px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type {
+    height: 130px;
+    width: 126.75px;
+    top: 19.5px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type:first-child {
+    left: 19.5px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type:last-child {
+    right: 19.5px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type [class*=title] {
+    left: 9.75px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .challenge-title,
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .conference-title {
+    height: 15px;
+    line-height: 15px;
+    font-size: 13px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .challenge-title {
+    top: 39px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .conference-title {
+    top: 54px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .conference-type-title {
+    top: 69px;
+    width: 107.25px;
+    font-size: 16.25px;
+    height: 18.25px;
+    line-height: 18.25px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .square {
+    height: 11px;
+    width: 11px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .square-one {
+    top: 40px;
+    right: 22.75px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .square-two {
+    top: 40px;
+    right: 9.75px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .square-three {
+    top: 54px;
+    right: 9.75px;
+  }
+}
+@media (min-width: 541px) and (max-width: 768px) {
+  body.front .main-container #splash-container {
+    width: 384px;
+    height: 272px;
+    margin-left: -192px;
+    margin-top: -144px;
+  }
+  body.front .main-container #splash-container #splash-header {
+    font-size: 24px;
+    height: 64px;
+    line-height: 64px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type {
+    height: 160px;
+    width: 156px;
+    top: 24px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type:first-child {
+    left: 24px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type:last-child {
+    right: 24px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type [class*=title] {
+    left: 12px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .challenge-title,
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .conference-title {
+    height: 18px;
+    line-height: 18px;
+    font-size: 16px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .challenge-title {
+    top: 48px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .conference-title {
+    top: 66px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .conference-type-title {
+    top: 84px;
+    width: 132px;
+    font-size: 20px;
+    height: 22px;
+    line-height: 22px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .square {
+    height: 14px;
+    width: 14px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .square-one {
+    top: 49px;
+    right: 28px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .square-two {
+    top: 49px;
+    right: 12px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .square-three {
+    top: 66px;
+    right: 12px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  body.front .main-container #splash-container {
+    width: 432px;
+    height: 306px;
+    margin-left: -216px;
+    margin-top: -162px;
+  }
+  body.front .main-container #splash-container #splash-header {
+    font-size: 27px;
+    height: 72px;
+    line-height: 72px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type {
+    height: 180px;
+    width: 175.5px;
+    top: 27px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type:first-child {
+    left: 27px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type:last-child {
+    right: 27px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type [class*=title] {
+    left: 13.5px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .challenge-title,
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .conference-title {
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .challenge-title {
+    top: 54px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .conference-title {
+    top: 74px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .conference-type-title {
+    top: 94px;
+    width: 148.5px;
+    font-size: 22.5px;
+    height: 24.5px;
+    line-height: 24.5px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .square {
+    height: 16px;
+    width: 16px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .square-one {
+    top: 55px;
+    right: 31.5px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .square-two {
+    top: 55px;
+    right: 13.5px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .square-three {
+    top: 74px;
+    right: 13.5px;
+  }
+}
+@media (min-width: 1025px) {
+  body.front .main-container #splash-container {
+    width: 576px;
+    height: 408px;
+    margin-left: -288px;
+    margin-top: -216px;
+  }
+  body.front .main-container #splash-container #splash-header {
+    font-size: 36px;
+    height: 96px;
+    line-height: 96px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type {
+    height: 240px;
+    width: 234px;
+    top: 36px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type:first-child {
+    left: 36px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type:last-child {
+    right: 36px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type [class*=title] {
+    left: 18px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .challenge-title,
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .conference-title {
+    height: 26px;
+    line-height: 26px;
+    font-size: 24px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .challenge-title {
+    top: 72px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .conference-title {
+    top: 98px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .conference-type-title {
+    top: 124px;
+    width: 198px;
+    font-size: 30px;
+    height: 32px;
+    line-height: 32px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .square {
+    height: 22px;
+    width: 22px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .square-one {
+    top: 73px;
+    right: 42px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .square-two {
+    top: 73px;
+    right: 18px;
+  }
+  body.front .main-container #splash-container #choose-container a.choose-challenge-type .square-three {
+    top: 98px;
+    right: 18px;
+  }
+}
 body.front .main-container #splash-container {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 320px;
-  height: 250px;
-  margin-left: -160px;
-  margin-top: -125px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 body.front .main-container #splash-container #splash-header {
@@ -7550,74 +7799,32 @@ body.front .main-container #splash-container #splash-header {
   color: white;
   text-align: center;
   text-transform: uppercase;
-  font-size: 22px;
   font-weight: bold;
-  height: 55px;
-  line-height: 55px;
 }
 body.front .main-container #splash-container #choose-container {
   position: relative;
 }
 body.front .main-container #splash-container #choose-container a.choose-challenge-type {
   display: block;
-  height: 145px;
-  width: 130px;
-  top: 20px;
   position: absolute;
-}
-body.front .main-container #splash-container #choose-container a.choose-challenge-type:first-child {
-  left: 20px;
-}
-body.front .main-container #splash-container #choose-container a.choose-challenge-type:last-child {
-  right: 20px;
 }
 body.front .main-container #splash-container #choose-container a.choose-challenge-type [class*=-title] {
   text-transform: uppercase;
   position: absolute;
-  left: 10px;
 }
 body.front .main-container #splash-container #choose-container a.choose-challenge-type .challenge-title,
 body.front .main-container #splash-container #choose-container a.choose-challenge-type .conference-title {
-  font-size: 18px;
   font-weight: bold;
-  height: 16px;
-  line-height: 16px;
-  font-size: 14px;
-}
-body.front .main-container #splash-container #choose-container a.choose-challenge-type .challenge-title {
-  top: 42px;
-}
-body.front .main-container #splash-container #choose-container a.choose-challenge-type .conference-title {
-  top: 58px;
 }
 body.front .main-container #splash-container #choose-container a.choose-challenge-type .conference-type-title {
   font-family: 'baron_neue';
   color: black;
   background-color: white;
-  top: 74px;
-  width: 110px;
   text-align: center;
-  height: 20px;
-  line-height: 20px;
-  font-size: 18px;
 }
 body.front .main-container #splash-container #choose-container a.choose-challenge-type .square {
   background-color: white;
-  height: 12px;
-  width: 12px;
   position: absolute;
-}
-body.front .main-container #splash-container #choose-container a.choose-challenge-type .square-one {
-  top: 43px;
-  right: 24px;
-}
-body.front .main-container #splash-container #choose-container a.choose-challenge-type .square-two {
-  top: 43px;
-  right: 10px;
-}
-body.front .main-container #splash-container #choose-container a.choose-challenge-type .square-three {
-  top: 58px;
-  right: 10px;
 }
 body.front .main-container #splash-container #choose-container a#choose-premium {
   background-color: red;

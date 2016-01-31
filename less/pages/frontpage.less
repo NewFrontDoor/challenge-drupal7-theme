@@ -1,7 +1,91 @@
+.create-splash-container-sizing(@splash-base-size-unit: 13px) {
+  #splash-container {
+    width: 24 * @splash-base-size-unit;
+    height: 17 * @splash-base-size-unit;
+
+    margin-left: -12 * @splash-base-size-unit;
+    margin-top: -9 * @splash-base-size-unit;
+
+    #splash-header {
+      font-size: 1.5 * @splash-base-size-unit;
+      height: 4 * @splash-base-size-unit;
+      line-height: 4 * @splash-base-size-unit;
+    }
+
+    #choose-container {
+      a.choose-challenge-type {
+        height: 10 * @splash-base-size-unit;
+        width: 9.75 * @splash-base-size-unit;
+        top: 1.5 * @splash-base-size-unit;
+
+        &:first-child {
+          left: 1.5 * @splash-base-size-unit;
+        }
+
+        &:last-child {
+          right: 1.5 * @splash-base-size-unit;
+        }
+        [class*=title] {
+          left: 0.75 * @splash-base-size-unit;
+        }
+
+        .challenge-title, .conference-title {
+          height: @splash-base-size-unit + 2px;
+          line-height: @splash-base-size-unit + 2px;
+          font-size: @splash-base-size-unit;
+        }
+
+        .challenge-title {
+          top: 3 * @splash-base-size-unit;
+        }
+
+        .conference-title {
+          top: 3 * @splash-base-size-unit + (@splash-base-size-unit + 2px);
+        }
+
+        .conference-type-title {
+          top: 3 * @splash-base-size-unit + (2 * (@splash-base-size-unit + 2px));
+          width: 8.25 * @splash-base-size-unit;
+          font-size: @splash-base-size-unit * 1.25;
+          height: @splash-base-size-unit * 1.25 + 2px;
+          line-height: @splash-base-size-unit * 1.25 + 2px;
+        }
+
+        .square {
+          height: @splash-base-size-unit - 2px;
+          width: @splash-base-size-unit - 2px;
+        }
+
+        .square-one {
+          top: 3 * @splash-base-size-unit + 1px;
+          right: 1.75 * @splash-base-size-unit;
+        }
+
+        .square-two {
+          top: 3 * @splash-base-size-unit + 1px;
+          right: 0.75 * @splash-base-size-unit;
+        }
+
+        .square-three {
+          top: 4 * @splash-base-size-unit + 2px;
+          right: 0.75 * @splash-base-size-unit;
+        }
+      }
+    }
+  }
+}
+
+
+
 html { height: 100%; }
 body.front {
   height: 100%;
-  padding-top: 0 !important;
+  &.toolbar-drawer.navbar-is-fixed-top {
+    padding-top: 64px !important;
+  }
+  &.navbar-is-fixed-top {
+    padding-top: 0 !important;
+  }
 
   .main-container {
     width: 100%;
@@ -10,15 +94,23 @@ body.front {
     border: 10px white solid;
     background: #eee;
 
+    @media (max-width: 540px) {
+      .create-splash-container-sizing(13px);
+    }
+    @media (min-width: 541px) and (max-width: 768px) {
+      .create-splash-container-sizing(16px);
+    }
+    @media(min-width: 769px) and (max-width: 1024px) {
+      .create-splash-container-sizing(18px);
+    }
+    @media(min-width: 1025px) {
+      .create-splash-container-sizing(24px);
+    }
+
     #splash-container {
       position:absolute;
       top: 50%;
       left: 50%;
-
-      width: 320px;
-      height: 250px;
-      margin-left: -160px;
-      margin-top: -125px;
 
       background-color: @splash-container-background;
 
@@ -27,10 +119,7 @@ body.front {
         color:white;
         text-align: center;
         text-transform: uppercase;
-        font-size: 22px;
         font-weight: bold;
-        height: 55px;
-        line-height: 55px;
       }
 
       #choose-container {
@@ -38,74 +127,31 @@ body.front {
 
         a.choose-challenge-type {
           display: block;
-          height: 145px;
-          width: 130px;
-          top: 20px;
           position: absolute;
-
-          &:first-child {
-            left: 20px;
-          }
-          &:last-child {
-            right: 20px;
-          }
 
           [class*=-title] {
             text-transform: uppercase;
             position: absolute;
-            left: 10px;
           }
 
           @text-start-top: 42px;
 
           .challenge-title, .conference-title {
-            font-size: @font-size-large;
             font-weight: bold;
-            height: 16px;
-            line-height: 16px;
-            font-size: 14px;
-          }
-
-          .challenge-title {
-            top: @text-start-top;
-          }
-          .conference-title {
-            top: @text-start-top + 16px;
           }
 
           .conference-type-title {
             font-family: 'baron_neue';
             color: black;
             background-color: white;
-            top: @text-start-top + 32px;
-            width: 110px;
             text-align: center;
-            height: 20px;
-            line-height: 20px;
-            font-size: 18px;
           }
 
           .square {
             background-color: white;
-            height: 12px;
-            width: 12px;
             position: absolute;
           }
 
-          .square-one {
-            top: @text-start-top + 1px;
-            right: 24px;
-          }
-
-          .square-two {
-            top: @text-start-top + 1px;
-            right: 10px;
-          }
-
-          .square-three {
-            top: @text-start-top + 16px;
-            right: 10px;
-          }
         }
 
         a#choose-premium {
